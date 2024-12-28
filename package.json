@@ -17,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
@@ -40,5 +40,6 @@
   },
   "devDependencies": {
     "gh-pages": "^6.2.0"
-  }
+  },
+  "homepage": "https://Zafron047.github.io/websphere_spa"
 }

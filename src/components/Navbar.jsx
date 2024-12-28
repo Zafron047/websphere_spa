@@ -10,24 +10,29 @@ const Navbar = () => {
           <span>Sphere</span>
         </div>
       </div>
-      <ul className="nav-links">
-        <li>
-          <a>Home</a>
-        </li>
-        <li>
-          <a>About Us</a>
-        </li>
-        <li>
-          <a>Services</a>
-        </li>
-        <li>
-          <a>Work Samples</a>
-        </li>
-        <li>
-          <a>Contact Us</a>
-        </li>
-      </ul>
-      <button className="nav__button">Hire Us</button>
+      <div className={`nav-links-container ${() => {}}`}>
+        <ul className="nav-links">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About Us</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Work Samples</a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+        <button className="nav__button">Hire Us</button>
+      </div>
+      <button className="menu-toggle" onClick={() => {}}>
+        ☰
+      </button>
     </div>
   );
 };
