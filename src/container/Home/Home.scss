@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
 .home__container {
+  height: 100vh;
   padding: 5% 20%;
   display: flex;
   justify-content: center;
   align-items: center;
 
   @media screen and (max-width: 768px) {
+    margin-top: 30%;
     padding: 5% 10%;
+    align-items: flex-start;
   }
 }
 
@@ -34,16 +32,21 @@ body {
   @media screen and (max-width: 768px) {
     h1 {
       font-size: 1.5rem;
-    letter-spacing:normal;
+      letter-spacing: normal;
+      line-height: 1.5;
+
     }
 
     p {
+      margin-top: 20px;
       font-size: 0.75rem;
+      letter-spacing: 0.5px;
+      line-height: 1.5;
     }
   }
 
   .home__container-gradient-header {
-    background: linear-gradient(90deg, #9370DB, #9270db, #f8aa69, #f79342);
+    background: linear-gradient(90deg, #9370db, #9270db, #f8aa69, #f79342);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -63,7 +66,8 @@ body {
   cursor: pointer;
 
   @media screen and (max-width: 768px) {
+    margin-top: 50px;
     font-size: x-small;
-    padding: 5px 10px;
+    padding: 10px 15px;
   }
 }
