@@ -1,18 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 .home__container {
-  // width: 100vw;
-  // height: calc(100vh - 140px);
-  height: min(100vh - 110px);
+  height: calc(100vh - 110px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+
   @media screen and (max-width: 768px) {
-    margin-top: 30%;
-    padding: 5% 10%;
-    align-items: flex-start;
+    align-items: center;
   }
 }
 
@@ -25,11 +22,11 @@
   max-width: 70%;
   color: #161515;
   text-align: center;
-  // max-width: 900px;
+  gap: 20px;
 
   h1 {
     color: black;
-    font-family: poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: clamp(1.5rem, 5vw, 5.2rem);
     font-weight: 700;
     letter-spacing: 1px;
@@ -41,19 +38,30 @@
     font-size: 1.2rem;
     letter-spacing: 1px;
     line-height: 1.5;
-    margin-top: 30px;
   }
 
   @media screen and (max-width: 768px) {
     h1 {
-      font-size: 1.5rem;
+      font-size: clamp(2rem, 5vw, 3rem);
       letter-spacing: normal;
       line-height: 1.5;
     }
 
     p {
       margin-top: 1rem;
-      font-size: 0.75rem;
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 1.75rem;
+      letter-spacing: normal;
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: 0.9rem;
     }
   }
 
@@ -63,9 +71,9 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  
+
   .content-button {
-    background-color: #6f43f4;
+    background-color: #664FE9;
     font-size: medium;
     letter-spacing: 0.5px;
     line-height: 18px;
@@ -75,16 +83,18 @@
     border-radius: 5px;
     margin-top: 20px;
     cursor: pointer;
-  
-    @media screen and (max-width: 768px) {
-      margin-top: 50px;
-      font-size: x-small;
-      padding: 10px 15px;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #5733c4;
+    }
+
+    &:focus {
+      outline: 2px solid #f79342;
+      outline-offset: 2px;
     }
   }
-
 }
-
 
 .Home__container-achievements {
   height: 25%;
@@ -95,41 +105,20 @@
   padding: 0;
   gap: 20px;
   width: 90%;
-  display: flex
-;
-  /* justify-content: space-between; */
-  /* align-items: center; */
   list-style: none;
 
-  #achievement_card-1 {
-    background-color: #E8E3FF;
-    // border-color: #D7CEFF;
-  }
-
-  #achievement_card-2 {
-    background-color: #B5FFE5;
-  }
-
-  #achievement_card-3 {
-    background-color: #FFE6E4;
-  }
-
   li {
+    flex: 1 1 calc(28% - 10px);
+    height: 80%;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 28%;
-    height: 80%; // need media query
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-
-    @media screen and (max-width: 768px) {
-      // width: 90%;
-      // margin-bottom: 20px;
-    }
 
     &:hover {
       transform: scale(1.05);
@@ -141,10 +130,60 @@
     }
 
     h2 {
-      font-size: 1.75rem;
+      font-size: clamp(1rem, 2vw, 1.75rem);
       font-weight: normal;
       margin-top: 10px;
       color: #030307;
+    }
+  }
+
+  #achievement_card-1 {
+    background-color: #e8e3ff;
+  }
+
+  #achievement_card-2 {
+    background-color: #b5ffe5;
+  }
+
+  #achievement_card-3 {
+    background-color: #ffe6e4;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 80%;
+
+    li {
+      width: 100%;
+      height: auto;
+      padding: 15px;
+
+      img {
+        width: 60px;
+        height: 60px;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    li {
+      padding: 10px;
+      margin-bottom: 15px;
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+
+      h2 {
+        font-size: 1.25rem;
+      }
     }
   }
 }
