@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 .home__container {
-  height: calc(100vh - 70px);
-  padding: 0 20%;
+  // width: 100vw;
+  // height: calc(100vh - 140px);
+  height: min(100vh - 110px);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-
+  gap: 20px;
   @media screen and (max-width: 768px) {
     margin-top: 30%;
     padding: 5% 10%;
@@ -15,18 +17,31 @@
 }
 
 .home__container-content {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 70%;
   color: #161515;
   text-align: center;
-  max-width: 900px;
+  // max-width: 900px;
 
   h1 {
     color: black;
     font-family: poppins, sans-serif;
-    font-size: 5.2rem;
+    font-size: clamp(1.5rem, 5vw, 5.2rem);
     font-weight: 700;
     letter-spacing: 1px;
     margin: 0;
-    line-height: 1.4;
+    line-height: 1.2;
+  }
+
+  p {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-top: 30px;
   }
 
   @media screen and (max-width: 768px) {
@@ -34,14 +49,11 @@
       font-size: 1.5rem;
       letter-spacing: normal;
       line-height: 1.5;
-
     }
 
     p {
-      margin-top: 20px;
+      margin-top: 1rem;
       font-size: 0.75rem;
-      letter-spacing: 0.5px;
-      line-height: 1.5;
     }
   }
 
@@ -51,23 +63,88 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  
+  .content-button {
+    background-color: #6f43f4;
+    font-size: medium;
+    letter-spacing: 0.5px;
+    line-height: 18px;
+    color: white;
+    border: none;
+    padding: 18px 27px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+  
+    @media screen and (max-width: 768px) {
+      margin-top: 50px;
+      font-size: x-small;
+      padding: 10px 15px;
+    }
+  }
+
 }
 
-.home__container-button {
-  background-color: #6f43f4;
-  font-size: medium;
-  letter-spacing: 0.5px;
-  line-height: 18px;
-  color: white;
-  border: none;
-  padding: 18px 27px;
-  border-radius: 5px;
-  margin-top: 20px;
-  cursor: pointer;
 
-  @media screen and (max-width: 768px) {
-    margin-top: 50px;
-    font-size: x-small;
-    padding: 10px 15px;
+.Home__container-achievements {
+  height: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+  width: 90%;
+  display: flex
+;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  list-style: none;
+
+  #achievement_card-1 {
+    background-color: #E8E3FF;
+    // border-color: #D7CEFF;
+  }
+
+  #achievement_card-2 {
+    background-color: #B5FFE5;
+  }
+
+  #achievement_card-3 {
+    background-color: #FFE6E4;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 28%;
+    height: 80%; // need media query
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+
+    @media screen and (max-width: 768px) {
+      // width: 90%;
+      // margin-bottom: 20px;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    img {
+      width: 80px;
+      height: 80px;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+      font-weight: normal;
+      margin-top: 10px;
+      color: #030307;
+    }
   }
 }

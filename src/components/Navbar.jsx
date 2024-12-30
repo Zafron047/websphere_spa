@@ -1,10 +1,13 @@
 import React from 'react';
+
 import './Navbar.scss';
+import { images } from '../constants';
+
 const Navbar = () => {
   return (
     <div className="nav-container">
       <div className="logo-container">
-        <img src="https://www.ironhack.com/assets/shared/logo.svg" />
+        <img src={images.agency_logo} />
         <div className="logo-text">
           <p>Web</p>
           <span>Sphere</span>
@@ -28,8 +31,8 @@ const Navbar = () => {
             <a href="#">Contact Us</a>
           </li>
         </ul>
-        <button className="nav__button">Hire Us</button>
       </div>
+      <button className="nav__button">Hire Us</button>
       <button className="menu-toggle" onClick={() => {}}>
         ☰
       </button>
