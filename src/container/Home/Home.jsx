@@ -15,7 +15,7 @@ const Home = () => {
           2000 years old. Richard McClintock, a Latin professor at
           Hampden-Sydney College in Virginia.
         </p>
-        <button className="content-button">Contact Us</button>
+        <button className="app__button">Contact Us</button>
       </div>
 
       <ul className="Home__container-achievements">
