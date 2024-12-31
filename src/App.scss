@@ -39,7 +39,7 @@
   line-height: 18px;
   color: white;
   border: none;
-  padding: 18px 27px;
+  padding: 25px 35px;
   border-radius: 5px;
   margin-top: 20px;
   cursor: pointer;
@@ -53,4 +53,22 @@
     outline: 2px solid #f79342;
     outline-offset: 2px;
   }
+}
+
+h2 {
+  font-size: 3.85vw;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: clamp(2rem, 2.5vw, 3rem);
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.5vw;
+  line-height: 1.5;
+  // margin-bottom: 60px;
 }
