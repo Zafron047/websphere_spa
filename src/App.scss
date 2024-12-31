@@ -31,3 +31,26 @@
       radial-gradient(circle at 85% 65%, #fef6e4 2%, transparent 30%);
   }
 }
+
+.app__button {
+  background-color: #664fe9;
+  font-size: medium;
+  letter-spacing: 0.5px;
+  line-height: 18px;
+  color: white;
+  border: none;
+  padding: 18px 27px;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #5733c4;
+  }
+
+  &:focus {
+    outline: 2px solid #f79342;
+    outline-offset: 2px;
+  }
+}

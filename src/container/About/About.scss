@@ -1,0 +1,114 @@
+.about__container {
+  height: 1639px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 5px solid red;
+}
+
+.about__description-container {
+  border: 2px solid black;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .desc__text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 55%;
+    height: 100%;
+    margin-right: 10px;
+    flex: 1 1 55%;
+    border: 2px solid #664fe9;
+
+    h2 {
+      font-size: 3.85vw;
+      font-weight: bold;
+      margin-bottom: 20px;
+      margin-top: 0;
+    }
+    p {
+      font-size: 1.5vw;
+      line-height: 1.5;
+      margin-bottom: 60px;
+    }
+    button {
+      margin-top: auto;
+      justify-self: flex-end;
+      align-self: flex-start;
+      // margin-bottom: 10%;
+    }
+  }
+
+  .desc__img-container {
+    flex: 1 1 40%;
+    // width: 40%;
+    // aspect-ratio: 1;
+    align-self: flex-start;
+
+    margin-left: 10px;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 5px solid #664fe9;
+
+    .img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+
+    .img-wrapper:nth-child(1) {
+      width: 85%;
+      height: 45%;
+      align-self: flex-end;
+      border: 1px solid black;
+      position: relative;
+    }
+
+    .img-wrapper:nth-child(2) {
+      width: 30%;
+      // height: 40%;
+
+      // border: 1px solid black;
+      border-radius: 50%;
+      position: absolute;
+      bottom: -25%;
+      left: 0%;
+    }
+
+    .img-wrapper:nth-child(2) img {
+      border-radius: 50%;
+      // border: 2px solid blue;
+    }
+  }
+
+  .about__logo-container {
+    width: 100%;
+  }
+}
+
+.about__logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #E8E3FF;
+  padding: 40px 0;
+}
+
+.about__video-container {
+  width: 90%;
+
+  .video__container-iframe {
+    width: 100%;
+    height: 60vh;
+    border: 10px solid #664fe985;
+    border-radius: 10px;
+  }
+}
