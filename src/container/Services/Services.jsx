@@ -18,21 +18,25 @@ const serviceData = [
   },
   {
     title: 'Web App Development',
-    description: 'Description for Web App Development. Description for Web App Development. Description for Web App Development. Description for Web App Development. Description for Web App Development.',
+    description:
+      'Description for Web App Development. Description for Web App Development. Description for Web App Development. Description for Web App Development. Description for Web App Development.',
     image: images.ui_ux,
   },
   {
     title: 'Web Design',
-    description: 'Description for Web Design. Description for Web Design. Description for Web Design. Description for Web Design. Description for Web Design. Description for Web Design. Description for Web Design.',
+    description:
+      'Description for Web Design. Description for Web Design. Description for Web Design. Description for Web Design. Description for Web Design. Description for Web Design. Description for Web Design.',
     image: images.ui_ux,
   },
   {
     title: 'SEO Services',
-    description: 'Description for SEO Services. Description for SEO Services. Description for SEO Services. Description for SEO Services. Description for SEO Services. Description for SEO Services. Description for',
+    description:
+      'Description for SEO Services. Description for SEO Services. Description for SEO Services. Description for SEO Services. Description for SEO Services. Description for SEO Services. Description for',
   },
   {
     title: 'Content Creation and Management',
-    description: 'Description for Content Creation and Management. Description for Content Creation and Management. Description for Content Creation and Management. Description for Content Creation and Management.',
+    description:
+      'Description for Content Creation and Management. Description for Content Creation and Management. Description for Content Creation and Management. Description for Content Creation and Management.',
     image: images.ui_ux,
   },
 ];
@@ -47,10 +51,9 @@ const Services = () => {
   return (
     <div className="services__section">
       <ul>
-      <h2>Services we offer</h2>
+        <h2>Services we offer</h2>
         {serviceData.map((service, index) => (
           <li key={index} onClick={() => handleItemClick(index)}>
-            <hr />
             <div className="service__title">
               <h3 className="service-serial">{index + 1}</h3>
               <h3 className="service__header">{service.title}</h3>

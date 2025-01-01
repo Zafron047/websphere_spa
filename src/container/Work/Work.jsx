@@ -78,7 +78,7 @@ const Work = () => {
                 <img src={work.imgUrl} alt="work type" />
                 <div className='card__header'>
                   <h4 className="card__title">{work.title}</h4>
-                  <div>{work.icon}</div>
+                  <div className='work__icon'>{work.icon}</div>
                 </div>
                 <p>{ work.text}</p>
               </a>

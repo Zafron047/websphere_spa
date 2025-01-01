@@ -50,16 +50,26 @@
         color: inherit;
       }
 
-      .card__header {
-        display: flex;
-        justify-content: space-between;
-      }
-
       img {
         width: 100%;
         height: auto;
         border-bottom: 1px solid #ddd;
         margin-bottom: 20px;
+      }
+
+      .card__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .work__icon {
+          font-size: 1rem;
+          color: white;
+          background-color: #664fe9;
+          border: 8px solid #664fe9;
+          border-radius: 50%;
+          line-height: 0.6;
+        }
       }
 
       p {
@@ -70,12 +80,6 @@
         overflow: hidden;
         text-overflow: ellipsis;
         max-height: calc(1em * 2 * 1.5);
-      }
-
-      .card__header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
       }
     }
 
