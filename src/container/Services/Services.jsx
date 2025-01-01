@@ -13,27 +13,26 @@ const serviceData = [
   {
     title: 'Social Media Management',
     description:
-      'Description for Social Media Management. Description for Social Media Management. Description for Social Media Management. Description for Social Media Management. Description for Social Media Management. Description for Social Media Management.',
+      'Description for Social Media Management. Description for Social Media Management. Description for Social Media Management. Description for Social Media Management. Description for Social Media Management.',
     image: images.ui_ux,
   },
   {
     title: 'Web App Development',
-    description: 'Description for Web App Development. Description for Web App Development. Description for Web App Development. Description for Web App Development. Description for Web App Development. Description for Web App Development.',
+    description: 'Description for Web App Development. Description for Web App Development. Description for Web App Development. Description for Web App Development. Description for Web App Development.',
     image: images.ui_ux,
   },
   {
     title: 'Web Design',
-    description: 'Description for Web Design. Description for Web Design. Description for Web Design. Description for Web Design. Description for Web Design. Description for Web Design. Description for Web Design. Description for Web Design.',
+    description: 'Description for Web Design. Description for Web Design. Description for Web Design. Description for Web Design. Description for Web Design. Description for Web Design. Description for Web Design.',
     image: images.ui_ux,
   },
   {
     title: 'SEO Services',
-    description: 'Description for SEO Services. Description for SEO Services. Description for SEO Services. Description for SEO Services. Description for SEO Services. Description for SEO Services. Description for SEO Services. Description for SEO Services. Description for SEO Services. Description for SEO Services. ',
-    image: images.ui_ux,
+    description: 'Description for SEO Services. Description for SEO Services. Description for SEO Services. Description for SEO Services. Description for SEO Services. Description for SEO Services. Description for',
   },
   {
     title: 'Content Creation and Management',
-    description: 'Description for Content Creation and Management. Description for Content Creation and Management. Description for Content Creation and Management. Description for Content Creation and Management. Description for Content Creation and Management. ',
+    description: 'Description for Content Creation and Management. Description for Content Creation and Management. Description for Content Creation and Management. Description for Content Creation and Management.',
     image: images.ui_ux,
   },
 ];
@@ -42,7 +41,7 @@ const Services = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const handleItemClick = (index) => {
-    setOpenIndex(openIndex === index ? null : index); // Toggle the clicked item
+    setOpenIndex(openIndex === index ? null : index);
   };
 
   return (

@@ -1,8 +1,8 @@
 .about__container {
-  height: 1639px;
+  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  gap: 140px;
   align-items: center;
   border: 5px solid red;
 }
@@ -24,7 +24,7 @@
     margin-right: 10px;
     flex: 1 1 55%;
     border: 2px solid #664fe9;
-
+    
     p {
       margin-bottom: 60px;
     }
@@ -32,6 +32,16 @@
       margin-top: auto;
       justify-self: flex-end;
       align-self: flex-start;
+    }
+    
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      flex: unset;
+      align-self: center;
+      margin: 0;
+    }
+    @media screen and (max-width: 480px) {
+      width: 100%;
     }
   }
 
@@ -74,27 +84,68 @@
     }
   }
 
-  .about__logo-container {
-    width: 100%;
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+    gap: 40px;
+
+    .desc__img-container {
+      margin: 0;
+      width: 100%;
+
+      .img-wrapper:nth-child(1) {
+        width: 100%;
+        height: auto;
+        align-self: center;
+        position: relative;
+      }
+
+      .img-wrapper:nth-child(2) {
+        width: 30%;
+        transform: 
+        translateX(-30%) translateY(-30%);
+      }
+    }
   }
 }
 
 .about__logo-container {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  background-color: #E8E3FF;
-  padding: 40px 0;
+  gap: 20px;
+  
+  img {
+    max-width: 100px;
+    height: auto;
+  }
 }
+
 
 .about__video-container {
   width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   .video__container-iframe {
-    width: 100%;
-    height: 60vh;
+    width: 80%;
+    height: 50vh;
     border: 10px solid #664fe985;
     border-radius: 10px;
+
+    @media screen and (max-width: 1440px) {
+      height: 50vh;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+      height: 40vh;
+    }
+
+    @media screen and (max-width: 480px) {
+      height: 20vh;
+    }
   }
 }
