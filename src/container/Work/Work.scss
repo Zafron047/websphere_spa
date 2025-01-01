@@ -1,0 +1,122 @@
+.work__container {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid blueviolet;
+}
+
+.work__header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  .work__header__text {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      width: 60%;
+    }
+
+    button {
+      align-self: center;
+    }
+  }
+}
+
+.work__cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    gap: 20px;
+    border: 1px solid black;
+    padding: 0;
+    margin: 0;
+
+    li {
+      background-color: white;
+      padding: 30px;
+      border: 3px solid orange;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .card__header {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 20px;
+      }
+
+      p {
+        margin: 20px 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: calc(1em * 2 * 1.5);
+      }
+
+      .card__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    @media screen and (max-width: 868px) {
+      grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+
+      li {
+        padding: 15px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      grid-template-columns: 1fr;
+
+      li {
+        padding: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .work__header__text {
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      width: 100%;
+      text-align: center;
+    }
+
+    button {
+      margin-top: 20px;
+    }
+  }
+
+  .work__cards-container ul {
+    gap: 15px;
+  }
+
+  .work__cards-container li {
+    padding: 20px;
+  }
+}

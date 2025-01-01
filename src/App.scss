@@ -110,14 +110,14 @@ p {
   line-height: 1.5;
 
   @media screen and (max-width: 1024px) {
-    font-size: clamp(1rem, 1.5vw, 1.75rem); /* Adjusting for tablets and smaller desktops */
+    font-size: clamp(1rem, 1.5vw, 1.75rem);
   }
 
   @media screen and (max-width: 768px) {
-    font-size: clamp(1rem, 1.25vw, 1.5rem); /* Adjusting for tablets in portrait mode */
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
   }
 
   @media screen and (max-width: 480px) {
-    font-size: clamp(0.875rem, 1.25vw, 1.25rem); /* Adjusting for mobile phones */
+    font-size: clamp(0.875rem, 1.25vw, 1.25rem);
   }
 }

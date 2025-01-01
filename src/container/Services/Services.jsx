@@ -46,8 +46,8 @@ const Services = () => {
 
   return (
     <div className="services__section">
-      <h2>Services we offer</h2>
       <ul>
+      <h2>Services we offer</h2>
         {serviceData.map((service, index) => (
           <li key={index} onClick={() => handleItemClick(index)}>
             <hr />
