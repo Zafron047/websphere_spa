@@ -13,8 +13,8 @@ import Contact from './container/Contact/Contact';
 const App = () => {
   return (
     <>
+      <Navbar />
       <BGWrap>
-        <Navbar />
         <Home />
         <About />
         <Services />

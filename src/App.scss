@@ -15,6 +15,12 @@
 }
 
 .App-BG {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 140px;
+
   background: radial-gradient(circle at 15% 50%, #d4cffaa6 10%, transparent 30%),
     radial-gradient(circle at 50% 30%, #d4cffadd 10%, transparent 30%),
     radial-gradient(circle at 85% 65%, #fef6e4 2%, transparent 30%);
@@ -55,20 +61,63 @@
   }
 }
 
+h1 {
+  font-size: clamp(1.5rem, 5vw, 5.2rem);
+
+  @media screen and (max-width: 1024px) {
+    font-size: clamp(2rem, 5vw, 4rem);
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: clamp(1.75rem, 5vw, 3.5rem);
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+  }
+}
+
 h2 {
   font-size: 3.85vw;
   font-weight: bold;
   margin-bottom: 20px;
   margin-top: 0;
+
+  @media screen and (max-width: 768px) {
+    font-size: clamp(2.5rem, 3vw, 3.5rem);
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: clamp(2rem, 3vw, 3rem);
+  }
 }
 
 h3 {
   font-size: clamp(2rem, 2.5vw, 3rem);
   margin-bottom: 10px;
+
+  @media screen and (max-width: 768px) {
+    font-size: clamp(1.75rem, 2.5vw, 2.5rem);
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+  }
 }
 
 p {
   font-size: 1.5vw;
   line-height: 1.5;
-  // margin-bottom: 60px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: clamp(1rem, 1.5vw, 1.75rem); /* Adjusting for tablets and smaller desktops */
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: clamp(1rem, 1.25vw, 1.5rem); /* Adjusting for tablets in portrait mode */
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: clamp(0.875rem, 1.25vw, 1.25rem); /* Adjusting for mobile phones */
+  }
 }
