@@ -1,15 +1,20 @@
 {
   "files": {
-    "main.css": "/websphere_spa/static/css/main.d7ef5fb8.css",
-    "main.js": "/websphere_spa/static/js/main.3d5e7a41.js",
+    "main.css": "/websphere_spa/static/css/main.e274ab65.css",
+    "main.js": "/websphere_spa/static/js/main.23797213.js",
     "static/js/453.59542384.chunk.js": "/websphere_spa/static/js/453.59542384.chunk.js",
+    "static/media/thumbnail.png": "/websphere_spa/static/media/thumbnail.3c522e1f6521154d5971.png",
+    "static/media/about_office.png": "/websphere_spa/static/media/about_office.5fbf5bfce6e271f23876.png",
+    "static/media/design.png": "/websphere_spa/static/media/design.7a7cb7a8f830f1118992.png",
+    "static/media/ui_ux.png": "/websphere_spa/static/media/ui_ux.5b83a705838e02595bb8.png",
+    "static/media/diversity_zoom.png": "/websphere_spa/static/media/diversity_zoom.556e8c18f00e4e149552.png",
     "index.html": "/websphere_spa/index.html",
-    "main.d7ef5fb8.css.map": "/websphere_spa/static/css/main.d7ef5fb8.css.map",
-    "main.3d5e7a41.js.map": "/websphere_spa/static/js/main.3d5e7a41.js.map",
+    "main.e274ab65.css.map": "/websphere_spa/static/css/main.e274ab65.css.map",
+    "main.23797213.js.map": "/websphere_spa/static/js/main.23797213.js.map",
     "453.59542384.chunk.js.map": "/websphere_spa/static/js/453.59542384.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7ef5fb8.css",
-    "static/js/main.3d5e7a41.js"
+    "static/css/main.e274ab65.css",
+    "static/js/main.23797213.js"
   ]
 }
