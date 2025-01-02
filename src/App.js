@@ -1,14 +1,11 @@
 import React from 'react';
+
 import './App.scss';
-import Navbar from './components/Navbar/Navbar';
-import Home from './container/Home/Home';
-import Work from './container/Work/Work';
 import BGWrap from './wrapper/BGWrap';
-import About from './container/About/About';
-import Services from './container/Services/Services';
+import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
-import FAQ from './container/FAQ/FAQ';
-import Contact from './container/Contact/Contact';
+
+import { About, Contact, FAQ, Home, Services, Work } from './container';
 
 const App = () => {
   return (
