@@ -1,12 +1,12 @@
 .contact__container {
-  height: 400px;
+  // height: 400px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start; /* Align items to the start */
   width: 90%;
   gap: 2%; /* Reduced gap for better fit */
-
+  margin: 70px auto;
   // border: 10px solid green;
 
   .contact-first {
@@ -45,6 +45,10 @@
       height: 50px;
       font-size: 0.75rem;
       border-radius: 6px;
+
+      @media screen and (max-width: 1920px) {
+        top: 85%;
+      }
     }
   }
 
@@ -83,6 +87,26 @@
 
       justify-self: flex-end;
     }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact__container {
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .contact-first {
+    width: 90%;
+    height: auto;
+    aspect-ratio: 1;
+  }
+  .contact-last {
+    width: 90%;
+    height: auto;
+    aspect-ratio: 1;
   }
 }
 
